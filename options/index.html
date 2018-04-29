@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Developer Shortcuts</title>
+    <style type="text/css">
+        body {
+            min-width: 400px;
+            color: #222;
+            padding: 5px;
+        }
+
+        input {
+            padding: 2px;
+        }
+
+        textarea {
+            min-width: 400px;
+            color: #222;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 4px;
+        }
+
+        #statusMessage {
+            font-size: 0.95em;
+        }
+
+        #saveButton {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        #statusMessage {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-right: 10px;
+        }
+
+        .rightAligned {
+            padding-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+<textarea id="angelCoverLetter" title="Cover Letter" placeholder="Write your cover letter here... use {company} to automatically fill in the name of the company." rows="22"></textarea>
+
+<div class="rightAligned">
+    <a href="#">Github</a>
+    <input value="Save" id="saveButton" disabled type="button" style="float:right;"/>
+    <p id="statusMessage" style="float:right; display: none;">Status </p>
+</div>
+<script src=jquery.min.js></script>
+<script src="../constants.js"></script>
+<script src="options.js"></script>
+</body>
+</html>
